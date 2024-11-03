@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="registered.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://via.placeholder.com/50" alt="Logo">
+            <span>MyWebsite</span>
+        </div>
+        
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            
+            <!-- Menu with dropdown -->
+            <div class="menu-dropdown">
+                <a href="#">Menu</a>
+                <div class="dropdown-content">
+                    <a href="#">Đồ ăn vặt</a>
+                    <a href="#">Đồ uống</a>
+                </div>
+            </div>
+
+            <a href="#">Review</a>
+        </nav>
+
+        <!-- Icons for Login, Registration, Cart -->
+        <div class="icons">
+            <a href="#"><img src="https://via.placeholder.com/20" alt="Login Icon"></a>
+            <a href="#"><img src="https://via.placeholder.com/20" alt="Registration Icon"></a>
+            <a href="#"><img src="https://via.placeholder.com/20" alt="Cart Icon"></a>
+        </div>
+    </header>
+    <div class="main">
+        <h2>Registration Form</h2>
+        <form action="">
+            <label for="first">First Name:</label>
+            <input type="text" id="first" name="first" required />
+
+            <label for="last">Last Name:</label>
+            <input type="text" id="last" name="last" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"
+                   pattern="^(?=.*\d)(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9])\S{8,}$" 
+                   title="Password must contain at least one number, 
+                           one alphabet, one symbol, and be at 
+                           least 8 characters long" required />
+
+            <label for="repassword">Re-type Password:</label>
+            <input type="password" id="repassword" name="repassword" required />
+
+            <label for="mobile">Contact:</label>
+            <input type="text" id="mobile" name="mobile" maxlength="10" required />
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">
+                    Male
+                </option>
+                <option value="female">
+                    Female
+                </option>
+                <option value="other">
+                    Other
+                </option>
+            </select>
+
+            <button type="submit">
+                Submit
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>

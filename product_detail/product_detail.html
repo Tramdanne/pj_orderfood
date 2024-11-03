@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Sản Phẩm</title>
+    <link rel="stylesheet" href="product_detail.css">
+</head>
+<body>
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <img src="https://via.placeholder.com/50" alt="Logo">
+                <span>MyWebsite</span>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
+            </div>
+    
+            <nav class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                
+                <!-- Menu with dropdown -->
+                <div class="menu-dropdown">
+                    <a href="#">Menu</a>
+                    <div class="dropdown-content">
+                        <a href="#">Đồ ăn vặt</a>
+                        <a href="#">Đồ uống</a>
+                    </div>
+                </div>
+    
+                <a href="#">Review</a>
+            </nav>
+    
+            <!-- Icons for Login, Registration, Cart -->
+            <div class="icons">
+                <a href="#"><img src="https://via.placeholder.com/20" alt="Login Icon"></a>
+                <a href="#"><img src="https://via.placeholder.com/20" alt="Registration Icon"></a>
+                <a href="#"><img src="https://via.placeholder.com/20" alt="Cart Icon"></a>
+            </div>
+        </header>
+
+    <div class="product-container">
+        <!-- Product Images -->
+        <div class="product-images">
+            <img src="https://via.placeholder.com/400" alt="Product Image" class="main-image">
+            <div class="thumbnail-images">
+                <img src="https://via.placeholder.com/80" alt="Thumbnail">
+                <img src="https://via.placeholder.com/80" alt="Thumbnail">
+                <img src="https://via.placeholder.com/80" alt="Thumbnail">
+                <img src="https://via.placeholder.com/80" alt="Thumbnail">
+            </div>
+        </div>
+
+        <!-- Product Details -->
+        <div class="product-details">
+            <h2>Jumpsuit ngắn cúc họa mi S&M siêu xinh, giá rẻ GR0076</h2>
+            <div class="rating">
+                <span>4.9</span> ★★★★☆
+                <span>1.2k Đánh Giá</span> | 
+                <span>3k Đã Bán</span>
+            </div>
+            <p class="price">
+                <span class="new-price">99.000đ</span>
+                <span class="old-price">180.000đ</span>
+                <span class="discount">-45%</span>
+            </p>
+            
+            <!-- Policies -->
+            <div class="policies">
+                <p>Trả hàng 15 ngày</p>
+                <p>Bảo hiểm Thời trang</p>
+                <p>Miễn phí vận chuyển</p>
+            </div>
+
+            <!-- Size Selection -->
+            <div class="size-selection">
+                <p>Kích Cỡ</p>
+                <button>Size M</button>
+                <button>Size L</button>
+                <button>Size XL</button>
+                <button>Size XXL</button>
+            </div>
+
+            <!-- Quantity -->
+            <div class="quantity">
+                <p>Số Lượng</p>
+                <button class="quantity-btn">-</button>
+                <input type="text" value="1" readonly>
+                <button class="quantity-btn">+</button>
+                <span>126 sản phẩm có sẵn</span>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+                <button class="add-to-cart">Thêm Vào Giỏ Hàng</button>
+                <button class="buy-now">Mua Ngay</button>
+            </div>
+        </div>
+    </div>
+     <!-- Chi Tiết Sản Phẩm -->
+     <section class="product-info">
+        <h3>CHI TIẾT SẢN PHẨM</h3>
+        <table>
+            <tr><td>Danh mục</td><td>Đồ ăn vặt</td></tr>
+            <tr><td>Xuất xứ</td><td>Việt Nam</td></tr>
+            <tr><td>Hương vị</td><td>Ngọt</td></tr>
+            <tr><td>Thành phần</td><td>100% tự nhiên</td></tr>
+            <tr><td>Kích thước</td><td>250g</td></tr>
+            <tr><td>Hạn sử dụng</td><td>6 tháng</td></tr>
+            <tr><td>Bảo quản</td><td>Để nơi khô ráo</td></tr>
+        </table>
+    </section>
+
+    <!-- Mô Tả Sản Phẩm -->
+    <section class="product-description">
+        <h3>MÔ TẢ SẢN PHẨM</h3>
+        <p>Đồ ăn vặt thơm ngon, bổ dưỡng, được chế biến từ nguyên liệu tự nhiên. Phù hợp cho mọi độ tuổi và mọi dịp.</p>
+        <ul>
+            <li>Hương vị đặc biệt, hấp dẫn.</li>
+            <li>Đóng gói tiện lợi, dễ mang theo.</li>
+            <li>Bảo quản lâu dài, an toàn cho sức khỏe.</li>
+        </ul>
+    </section>
+
+    <!-- Đánh Giá Sản Phẩm -->
+    <section class="product-reviews">
+        <h3>ĐÁNH GIÁ SẢN PHẨM</h3>
+        <div class="review-summary">
+            <span class="average-rating">4.9</span>
+            <span>★★★★★</span>
+            <span>1.2k Đánh Giá</span>
+        </div>
+        <div class="review-filters">
+            <button>Tất Cả</button>
+            <button>5 Sao (1.1k)</button>
+            <button>4 Sao (50)</button>
+            <button>3 Sao (30)</button>
+            <button>2 Sao (10)</button>
+            <button>1 Sao (10)</button>
+        </div>
+        
+        <!-- Sample Review -->
+        <div class="review">
+            <p class="review-author">Nguyễn Văn A</p>
+            <p class="review-rating">★★★★★</p>
+            <p class="review-text">Sản phẩm rất tốt, đóng gói cẩn thận, sẽ ủng hộ lần sau.</p>
+            <div class="review-images">
+                <img src="https://via.placeholder.com/60" alt="Review Image">
+                <img src="https://via.placeholder.com/60" alt="Review Image">
+                <img src="https://via.placeholder.com/60" alt="Review Image">
+            </div>
+        </div>
+
+        <!-- Thêm nhiều đánh giá tương tự -->
+    </section>
+</body>
+</html>

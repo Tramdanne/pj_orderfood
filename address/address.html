@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Address</title> <!-- Title in English -->
+    <link rel="stylesheet" href="address.css">
+</head>
+<body>
+    <!-- Overlay Background -->
+    <div class="overlay"></div>
+
+    <!-- Address Form Modal -->
+    <div class="address-modal">
+        <h2>Add New Shipping Address</h2> <!-- Main title of the form -->
+        <p>Please add a shipping address to place an order</p>
+
+        <form>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Full Name">
+            
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" placeholder="Phone Number">
+            
+            <label for="address">City, District, Ward</label>
+            <select id="address">
+                <option selected>Select Address</option>
+                <option value="hcm">Ho Chi Minh City</option>
+                <option value="hn">Hanoi</option>
+            </select>
+            
+            <label for="detailed-address">Detailed Address</label>
+            <input type="text" id="detailed-address" placeholder="Detailed Address">
+            
+            <button type="button" class="add-location-btn">+ Add Location</button>
+
+            <p>Address Type:</p>
+            <div class="address-type">
+                <button type="button" class="address-type-btn active">Home</button>
+                <button type="button" class="address-type-btn">Office</button>
+            </div>
+
+            <div class="form-buttons">
+                <button type="button" class="back-btn">Back</button>
+                <button type="submit" class="submit-btn">Complete</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

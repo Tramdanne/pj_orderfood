@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://via.placeholder.com/50" alt="Logo">
+            <span>MyWebsite</span>
+        </div>
+        
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            
+            <!-- Menu with dropdown -->
+            <div class="menu-dropdown">
+                <a href="#">Menu</a>
+                <div class="dropdown-content">
+                    <a href="#">Đồ ăn vặt</a>
+                    <a href="#">Đồ uống</a>
+                </div>
+            </div>
+
+            <a href="#">Review</a>
+        </nav>
+
+        <!-- Icons for Login, Registration, Cart -->
+        <div class="icons">
+            <a href="#"><img src="https://via.placeholder.com/20" alt="Login Icon"></a>
+            <a href="#"><img src="https://via.placeholder.com/20" alt="Registration Icon"></a>
+            <a href="#"><img src="https://via.placeholder.com/20" alt="Cart Icon"></a>
+        </div>
+    </header>
+
+    <div class="cart-container">
+        <h2>Giỏ Hàng</h2>
+        
+        <!-- Header -->
+        <div class="cart-header">
+            <div class="cart-column">Sản Phẩm</div>
+            <div class="cart-column">Đơn Giá</div>
+            <div class="cart-column">Số Lượng</div>
+            <div class="cart-column">Số Tiền</div>
+            <div class="cart-column">Thao Tác</div>
+        </div>
+
+        <!-- Item 1 -->
+        <div class="cart-item">
+            <input type="checkbox">
+            <img src="https://via.placeholder.com/50" alt="Product Image">
+            <div class="item-info">
+                <p class="item-name">Áo thun thời trang</p>
+                <p class="item-shop">Shop: Fashion Store</p>
+            </div>
+            <div class="item-price" data-price="100000">100.000đ</div>
+            <div class="item-quantity">
+                <button class="quantity-btn" onclick="updateQuantity(this, -1)">-</button>
+                <input type="text" value="1" readonly>
+                <button class="quantity-btn" onclick="updateQuantity(this, 1)">+</button>
+            </div>
+            <div class="item-total">100.000đ</div>
+            <button class="remove-btn">Xóa</button>
+        </div>
+
+        <!-- Total Section -->
+        <div class="cart-footer">
+            <label>
+                <input type="checkbox">
+                Chọn Tất Cả
+            </label>
+            <button class="remove-btn">Xóa</button>
+            <div class="total-info">
+                Tổng thanh toán: <span class="total-amount">100.000đ</span>
+            </div>
+            <button class="checkout-btn">Mua Hàng</button>
+        </div>
+    </div>
+
+    <script src="cart.js"></script>
+</body>
+</html>

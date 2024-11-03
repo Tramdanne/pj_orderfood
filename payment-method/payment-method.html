@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <div class="checkout-container">
+        <h2>Select payment method</h2>
+        <a href="#" class="view-methods">View all methods ></a>
+
+        <!-- Payment Methods -->
+        <div class="payment-method">
+            <label>
+                <input type="radio" name="payment" checked>
+                <span class="method">
+                    <img src="https://via.placeholder.com/20" alt="Cash Icon"> Cash on Delivery
+                    <p>Pay when you receive</p>
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="payment">
+                <span class="method">
+                    <img src="https://via.placeholder.com/20" alt="ZaloPay Icon"> Zalopay Wallet
+                    <p>Link your Zalopay E-Wallet</p>
+                </span>
+            </label>
+        </div>
+
+        <!-- Voucher Section -->
+        <div class="voucher-section">
+            <h3>Voucher</h3>
+            <input type="text" placeholder="Enter Voucher Code">
+            <button>Apply</button>
+        </div>
+
+        <!-- Invoice and Contact Info -->
+        <div class="invoice-info">
+            <h3>Invoice and Contact Info <a href="#">Edit</a></h3>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="order-summary">
+            <h3>Order Summary</h3>
+            <p>Subtotal (1 Items) <span>₫ 25,999</span></p>
+            <p>Shipping Fee <span>₫ 32,700</span></p>
+            <p class="total">Total: <span>₫ 58,699</span></p>
+        </div>
+
+        <!-- Proceed to Payment Button -->
+        <button class="proceed-btn">Proceed to Payment</button>
+    </div>
+</body>
+</html>
