@@ -1,0 +1,184 @@
+/* Reset styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.checkout-container {
+    width: 320px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.view-methods {
+    font-size: 12px;
+    color: #007bff;
+    float: right;
+    text-decoration: none;
+}
+
+.view-methods:hover {
+    text-decoration: underline;
+}
+
+/* Payment Methods */
+.payment-method {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.payment-method label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.payment-method input[type="radio"] {
+    display: none;
+}
+
+.payment-method input[type="radio"]:checked + .method {
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: #f0f8ff;
+}
+
+.method {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #333;
+    font-size: 14px;
+    flex-grow: 1;
+}
+
+.method p {
+    font-size: 12px;
+    color: #666;
+    margin: 0;
+}
+
+/* Voucher Section */
+.voucher-section {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.voucher-section h3 {
+    font-size: 14px;
+    color: #333;
+}
+
+.voucher-section input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.voucher-section button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.voucher-section button:hover {
+    background-color: #0056b3;
+}
+
+/* Invoice Info */
+.invoice-info {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.invoice-info h3 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.invoice-info a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.invoice-info a:hover {
+    text-decoration: underline;
+}
+
+/* Order Summary */
+.order-summary h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.order-summary p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.order-summary .total {
+    font-weight: bold;
+    font-size: 16px;
+    color: #FF4500;
+}
+
+/* Proceed Button */
+.proceed-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #FF4500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.proceed-btn:hover {
+    background-color: #e03e00;
+}
