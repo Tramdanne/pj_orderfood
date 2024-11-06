@@ -30,7 +30,7 @@ h2, h3 {
 
 .view-methods {
     font-size: 12px;
-    color: #007bff;
+    color: #4CAF50;
     float: right;
     text-decoration: none;
 }
@@ -50,7 +50,7 @@ h2, h3 {
 .payment-method label {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px; /* Tạo khoảng cách giữa các phần tử */
     cursor: pointer;
     padding: 8px;
     border-radius: 5px;
@@ -61,11 +61,35 @@ h2, h3 {
     display: none;
 }
 
+/* Khi phương thức thanh toán được chọn */
 .payment-method input[type="radio"]:checked + .method {
-    border: 2px solid #007bff;
+    border: 2px solid #4CAF50;
     border-radius: 8px;
     padding: 8px;
     background-color: #f0f8ff;
+}
+
+/* Style cho method */
+.method {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #333;
+    font-size: 14px;
+    flex-grow: 1;
+}
+
+/* Style cho hình ảnh và văn bản để thẳng hàng */
+.method img {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+}
+
+/* Căn chỉnh văn bản thẳng hàng */
+.method span {
+    display: flex;
+    flex-direction: column;
 }
 
 .method {
@@ -83,10 +107,39 @@ h2, h3 {
     margin: 0;
 }
 
+/* Checkout container styling */
+.checkout-container {
+    position: relative; /* Để nút đóng nằm trong phạm vi của hộp thoại */
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Close button styling */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 2.5em;
+    cursor: pointer;
+    color: #666;
+}
+
+.close-btn:hover {
+    color: #ff0000; /* Màu đỏ khi hover */
+}
+
+
 /* Voucher Section */
 .voucher-section {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     gap: 8px;
     margin-bottom: 20px;
     padding: 10px;
@@ -99,7 +152,10 @@ h2, h3 {
     font-size: 14px;
     color: #333;
 }
-
+.Voucher_input
+{
+    display: flex;
+}
 .voucher-section input {
     flex-grow: 1;
     padding: 8px;
@@ -109,7 +165,7 @@ h2, h3 {
 
 .voucher-section button {
     padding: 8px 15px;
-    background-color: #007bff;
+    background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 4px;
@@ -119,7 +175,7 @@ h2, h3 {
 }
 
 .voucher-section button:hover {
-    background-color: #0056b3;
+    background-color: #4CAF50;
 }
 
 /* Invoice Info */
@@ -136,7 +192,7 @@ h2, h3 {
 }
 
 .invoice-info a {
-    color: #007bff;
+    color: #4CAF50;
     text-decoration: none;
     font-size: 12px;
 }
@@ -162,14 +218,14 @@ h2, h3 {
 .order-summary .total {
     font-weight: bold;
     font-size: 16px;
-    color: #FF4500;
+    color: #4CAF50;
 }
 
 /* Proceed Button */
 .proceed-btn {
     width: 100%;
     padding: 12px;
-    background-color: #FF4500;
+    background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 5px;
@@ -180,5 +236,5 @@ h2, h3 {
 }
 
 .proceed-btn:hover {
-    background-color: #e03e00;
+    background-color: #29862c;
 }

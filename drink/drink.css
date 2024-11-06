@@ -10,6 +10,7 @@ body {
     background-color: #f9f9f9;
 }
 
+/* Header styling */
 header {
     display: flex;
     justify-content: space-between;
@@ -46,7 +47,7 @@ header {
     padding: 10px;
     font-size: 1em;
     width: 100%;
-    border: 1px solid #ccc;
+    border: 1px solid #4CAF50;
     border-radius: 4px 0 0 4px;
     outline: none;
 }
@@ -55,14 +56,14 @@ header {
     padding: 10px 20px;
     font-size: 1em;
     border: none;
-    background-color: #2E7D32;
+    background-color: #3E8E41;
     color: white;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
 }
 
 .search-bar button:hover {
-    background-color: #1b5e20;
+    background-color: #2E7D32;
 }
 
 .nav-links {
@@ -124,22 +125,23 @@ header {
 
 .icons i {
     font-size: 24px;
-    color: #333;
+    color: white;
 }
 
 /* Subheader styling */
 .subheader {
     text-align: center;
     padding: 20px;
-    background-color: #f3f3f3;
+    background-color: #e8f5e9;
 }
 
 .subheader h1 {
     font-size: 2em;
-    color: #333;
+    color: #4CAF50;
     margin-bottom: 10px;
 }
 
+/* Filter buttons and select styling */
 .sort-filter {
     display: flex;
     justify-content: center;
@@ -150,16 +152,48 @@ header {
 .sort-filter button,
 .sort-filter select {
     padding: 8px 12px;
-    border: 1px solid #ccc;
+    border: 1px solid #4CAF50;
     background-color: #fff;
     cursor: pointer;
     border-radius: 5px;
     font-size: 1em;
+    color: #4CAF50;
 }
 
 .sort-filter button.active {
     background-color: #4CAF50;
     color: white;
+}
+
+.sort-filter button:hover {
+    background-color: #C8E6C9;
+    color: #4CAF50;
+}
+
+/* Custom styling for <select> */
+.sort-filter select {
+    padding: 8px 12px;
+    border: 1px solid #4CAF50;
+    background-color: #fff;
+    color: #4CAF50;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    appearance: none; /* Tắt biểu tượng mặc định của <select> */
+}
+
+.sort-filter select:focus {
+    background-color: #4CAF50; /* Màu nền khi chọn */
+    color: white; /* Màu chữ khi chọn */
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Tạo hiệu ứng shadow khi chọn */
+}
+
+/* Style cho các tùy chọn bên trong select */
+.sort-filter select option {
+    background-color: white; /* Nền trắng cho các tùy chọn */
+    color: #4CAF50;
 }
 
 /* Product grid styling */
@@ -212,7 +246,7 @@ header {
     gap: 10px;
     margin: 20px 0;
     font-size: 1em;
-    color: #555;
+    color: #4CAF50;
 }
 
 .pagination p {
@@ -221,16 +255,17 @@ header {
 
 .pagination button {
     padding: 8px 12px;
-    border: 1px solid #ccc;
+    border: 1px solid #4CAF50;
     background-color: #fff;
     cursor: pointer;
     border-radius: 5px;
     font-size: 1em;
+    color: #4CAF50;
 }
 
 .pagination button:hover {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #C8E6C9;
+    color: #4CAF50;
 }
 
 /* Footer styling */
@@ -260,11 +295,6 @@ footer {
     margin-bottom: 15px;
 }
 
-.footer-section p,
-.footer-section ul li {
-    color: #f1f1f1;
-}
-
 .footer-section ul {
     list-style: none;
     padding: 0;
@@ -275,25 +305,25 @@ footer {
 }
 
 .footer-section ul li a {
-    color: #fff;
+    color: #e0f2f1;
     text-decoration: none;
     font-size: 0.9em;
     transition: color 0.3s;
 }
 
 .footer-section ul li a:hover {
-    color: #e0e0e0;
+    color: #b2dfdb;
 }
 
 .footer-section .social a {
     font-size: 1.5em;
-    color: #fff;
+    color: #e0f2f1;
     margin-right: 15px;
     transition: color 0.3s;
 }
 
 .footer-section .social a:hover {
-    color: #e0e0e0;
+    color: #b2dfdb;
 }
 
 .footer-bottom {

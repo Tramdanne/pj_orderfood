@@ -2,24 +2,22 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 0; 
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f3f3f3;
+    background-color: #f9f9f9;
 }
 
 /* Header styling */
 header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #4CAF50; /* Màu chủ đề */
     color: white;
-    width: 100%;
-    box-sizing: border-box;
 }
 
 .logo {
@@ -39,17 +37,18 @@ header {
     font-weight: bold;
 }
 
+/* Search bar styling */
 .search-bar {
     display: flex;
     align-items: center;
-    width: 300px;
+    width: 400px;
 }
 
 .search-bar input {
     padding: 10px;
     font-size: 1em;
     width: 100%;
-    border: 1px solid #ccc;
+    border: 1px solid #4CAF50;
     border-radius: 4px 0 0 4px;
     outline: none;
 }
@@ -58,16 +57,17 @@ header {
     padding: 10px 20px;
     font-size: 1em;
     border: none;
-    background-color: #2E7D32;
+    background-color: #3E8E41;
     color: white;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
 }
 
 .search-bar button:hover {
-    background-color: #1b5e20;
+    background-color: #2E7D32;
 }
 
+/* Navigation links styling */
 .nav-links {
     display: flex;
     align-items: center;
@@ -81,6 +81,7 @@ header {
     font-weight: bold;
 }
 
+/* Dropdown Menu */
 .menu-dropdown {
     position: relative;
 }
@@ -90,14 +91,13 @@ header {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #fff;
-    color: #333;
-    border: 1px solid #ccc;
+    background-color: #4CAF50; /* Màu nền chủ đề */
+    color: white; /* Màu chữ trắng */
+    border: 1px solid #4CAF50;
     border-radius: 4px;
     min-width: 150px;
     padding: 10px 0;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
 }
 
 .menu-dropdown:hover .dropdown-content {
@@ -107,29 +107,33 @@ header {
 .dropdown-content a {
     display: block;
     padding: 8px 16px;
-    color: #333;
+    color: white; /* Màu chữ trắng */
     text-decoration: none;
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: #3E8E41; /* Màu nền khi hover nhạt hơn */
+    color: white; /* Đảm bảo màu chữ vẫn là trắng khi hover */
 }
 
+/* Icon section styling */
 .icons {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 25px; /* Điều chỉnh khoảng cách giữa các biểu tượng để giống ảnh */
 }
 
 .icons a {
     text-decoration: none;
     color: inherit;
+    font-size: 1.5em; /* Đảm bảo biểu tượng đủ lớn */
 }
 
-.icons i {
-    font-size: 24px;
-    color: white;
+.icons a:hover i {
+    color: #f1f1f1;
 }
+
+
 
 /* CSS cho form đăng nhập */
 

@@ -8,25 +8,43 @@
     <link rel="stylesheet" href="payment-method.css">
 </head>
 <body>
+    
     <div class="checkout-container">
+        
         <h2>Select payment method</h2>
-        <a href="#" class="view-methods">View all methods ></a>
+        <button class="close-btn" onclick="closeCheckout()">×</button>
 
         <!-- Payment Methods -->
         <div class="payment-method">
             <label>
                 <input type="radio" name="payment" checked>
                 <span class="method">
-                    <img src="https://via.placeholder.com/20" alt="Cash Icon"> Cash on Delivery
-                    <p>Pay when you receive</p>
+                    <img src="../asset/bidv.png" alt="Cash Icon"> Thanh toán bằng BIDV
+                    <!-- <p>Thanh toán bằng <br> Ngân hàng</p> -->
+                </span>
+            </label>
+
+            <label>
+                <input type="radio" name="payment" checked>
+                <span class="method">
+                    <img src="../asset/images.png" alt="Cash Icon"> Thanh toán bằng ZaloPay
+                    <!-- <p>Thanh toán bằng <br>ví ZaloPay</p> -->
+                </span>
+            </label>
+            
+            <label>
+                <input type="radio" name="payment" checked>
+                <span class="method">
+                    <img src="../asset/vcb.jfif" alt="Cash Icon"> Thanh toán bằng Vietcombank
+                    <!-- <p>Thanh toán bằng <br> Ngân hàng</p> -->
                 </span>
             </label>
 
             <label>
                 <input type="radio" name="payment">
                 <span class="method">
-                    <img src="https://via.placeholder.com/20" alt="ZaloPay Icon"> Zalopay Wallet
-                    <p>Link your Zalopay E-Wallet</p>
+                    <img src="../asset/momo.png" alt="ZaloPay Icon"> Thanh toán bằng MOMO
+                    <!-- <p>Thanh toán bằng <br> MOMO</p> -->
                 </span>
             </label>
         </div>
@@ -34,25 +52,23 @@
         <!-- Voucher Section -->
         <div class="voucher-section">
             <h3>Voucher</h3>
-            <input type="text" placeholder="Enter Voucher Code">
-            <button>Apply</button>
-        </div>
-
-        <!-- Invoice and Contact Info -->
-        <div class="invoice-info">
-            <h3>Invoice and Contact Info <a href="#">Edit</a></h3>
+            <div class="Voucher_input"><input type="text" placeholder="Enter Voucher Code">
+                <button>Apply</button></div>
         </div>
 
         <!-- Order Summary -->
         <div class="order-summary">
             <h3>Order Summary</h3>
-            <p>Subtotal (1 Items) <span>₫ 25,999</span></p>
-            <p>Shipping Fee <span>₫ 32,700</span></p>
-            <p class="total">Total: <span>₫ 58,699</span></p>
+            <p>Subtotal: <span id="subtotal">₫ 0</span></p>
+            <p>Shipping Fee <span id="shipping-fee">₫ 32,700</span></p>
+            <p class="total">Total: <span id="total-amount">₫ 0</span></p>
         </div>
+        
 
         <!-- Proceed to Payment Button -->
-        <button class="proceed-btn">Proceed to Payment</button>
+        <button class="proceed-btn"  onclick="location.href='../Order_Tracking/Order _tracking.html'">Proceed to Payment</button>
+
     </div>
+    <script src="payment_method.js"></script>
 </body>
 </html>

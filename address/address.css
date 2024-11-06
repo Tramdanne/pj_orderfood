@@ -80,6 +80,7 @@ input[type="text"], select {
 }
 
 /* Address Type Buttons */
+/* Address Type Buttons */
 .address-type {
     display: flex;
     gap: 10px;
@@ -94,16 +95,19 @@ input[type="text"], select {
     font-size: 14px;
     background: white;
     color: #333;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.address-type-btn.active {
+.address-type-btn.selected {
     border-color: #FF4500;
     color: #FF4500;
+    background-color: #FFEEE5; /* Màu nền nhạt khi được chọn */
 }
 
 .address-type-btn:hover {
     background-color: #f4f4f4;
 }
+
 
 /* Form Buttons */
 .form-buttons {
@@ -126,14 +130,15 @@ input[type="text"], select {
 }
 
 .submit-btn {
-    background-color: #FF4500;
+    background-color: #3E8E41;
     color: white;
 }
 
 .back-btn:hover {
-    background-color: #ddd;
+    background-color: #2E7D32;
+    color: #ffff;
 }
 
 .submit-btn:hover {
-    background-color: #e03e00;
+    background-color: #2E7D32;
 }

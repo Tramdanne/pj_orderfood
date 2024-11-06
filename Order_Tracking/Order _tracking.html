@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Tracking</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="Order _tracking.css">
+</head>
+<body>
+    <div class="order-container">
+        <h2>Order Information</h2>
+        <div class="order-info">
+            <p><strong>Order ID:</strong> cok07</p>
+            <p><strong>Order Date:</strong> 21/12/2017 17:10</p>
+            <p><strong>Contact Name:</strong> Lan</p>
+            <p><strong>Phone Number:</strong> 0967472490</p>
+            <p><strong>Customer:</strong> Lan</p>
+        </div>
+
+        <h3>Order Status</h3>
+        <div class="progress-bar">
+            <div class="step active">1<br><span>Not Confirmed</span></div>
+            <div class="step">2<br><span>Confirmed</span></div>
+            <div class="step">3<br><span>Delivered</span></div>
+            <div class="step">4<br><span>Cancelled</span></div>
+            <div class="step">5<br><span>Returned</span></div>
+        </div>
+
+        <div class="actions">
+            <button class="btn back" onclick="location.href='../payment-method/payment-method.html'">
+                Back
+            </button>
+            <button class="btn next" onclick="location.href='../index.html'">
+                Complete
+            </button>
+        </div>
+    </div>
+</body>
+</html>

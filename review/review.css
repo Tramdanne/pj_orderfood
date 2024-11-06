@@ -1,14 +1,21 @@
+/* Reset styling */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+/* Header styling */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #4CAF50; /* Màu chủ đề */
     color: white;
 }
 
@@ -29,6 +36,7 @@ header {
     font-weight: bold;
 }
 
+/* Search bar styling */
 .search-bar {
     display: flex;
     align-items: center;
@@ -39,7 +47,7 @@ header {
     padding: 10px;
     font-size: 1em;
     width: 100%;
-    border: 1px solid #ccc;
+    border: 1px solid #4CAF50;
     border-radius: 4px 0 0 4px;
     outline: none;
 }
@@ -48,16 +56,17 @@ header {
     padding: 10px 20px;
     font-size: 1em;
     border: none;
-    background-color: #2E7D32;
+    background-color: #3E8E41;
     color: white;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
 }
 
 .search-bar button:hover {
-    background-color: #1b5e20;
+    background-color: #2E7D32;
 }
 
+/* Navigation links styling */
 .nav-links {
     display: flex;
     align-items: center;
@@ -71,6 +80,7 @@ header {
     font-weight: bold;
 }
 
+/* Dropdown Menu */
 .menu-dropdown {
     position: relative;
 }
@@ -80,9 +90,9 @@ header {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #fff;
-    color: #333;
-    border: 1px solid #ccc;
+    background-color: #4CAF50; /* Màu nền chủ đề */
+    color: white; /* Màu chữ trắng */
+    border: 1px solid #4CAF50;
     border-radius: 4px;
     min-width: 150px;
     padding: 10px 0;
@@ -96,35 +106,34 @@ header {
 .dropdown-content a {
     display: block;
     padding: 8px 16px;
-    color: #333;
+    color: white; /* Màu chữ trắng */
     text-decoration: none;
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: #3E8E41; /* Màu nền khi hover nhạt hơn */
+    color: white; /* Đảm bảo màu chữ vẫn là trắng khi hover */
 }
 
+/* Icon section styling */
 .icons {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 25px; /* Điều chỉnh khoảng cách giữa các biểu tượng để giống ảnh */
 }
 
 .icons a {
     text-decoration: none;
     color: inherit;
+    font-size: 1.5em; /* Đảm bảo biểu tượng đủ lớn */
 }
 
-.icons i {
-    font-size: 24px;
-    color: #333;
+.icons a:hover i {
+    color: #f1f1f1;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-}
 
+/* Main content styling */
 .recipe-list {
     max-width: 800px;
     margin: 20px auto;
@@ -154,7 +163,7 @@ body {
 
 .recipe-content h3 {
     font-size: 1em;
-    color: #333;
+    color: #4CAF50;
     margin-bottom: 5px;
     font-weight: bold;
 }
@@ -207,25 +216,25 @@ footer {
 }
 
 .footer-section ul li a {
-    color: #fff;
+    color: #e0f2f1;
     text-decoration: none;
     font-size: 0.9em;
     transition: color 0.3s;
 }
 
 .footer-section ul li a:hover {
-    color: #e0e0e0;
+    color: #b2dfdb;
 }
 
 .footer-section .social a {
     font-size: 1.5em;
-    color: #fff;
+    color: #e0f2f1;
     margin-right: 15px;
     transition: color 0.3s;
 }
 
 .footer-section .social a:hover {
-    color: #e0e0e0;
+    color: #b2dfdb;
 }
 
 .footer-bottom {
@@ -233,5 +242,16 @@ footer {
     padding: 15px 0;
     border-top: 1px solid #3e8e41;
     font-size: 0.8em;
+    color: #f1f1f1;
+}
+
+/* Ensure hover styles and cursor pointer for clickable elements */
+.nav-links a:hover,
+.dropdown-content a:hover,
+.footer-section ul li a:hover {
+    color: #f1f1f1;
+}
+
+.icons a:hover i {
     color: #f1f1f1;
 }

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="snacks.css">
+    <title>Drinks_Donfood</title>
+    <link rel="stylesheet" href="drink.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
@@ -39,7 +39,7 @@
         </div>
     </header>
     
-<!-- Subheader for Filters -->
+   <!-- Subheader for Filters -->
 <section class="subheader">
     <h1>Snacks</h1>
     <nav class="sort-filter">
@@ -47,21 +47,35 @@
         <button id="filter-new" class="filter-button">Newest</button>
         <button id="filter-popular" class="filter-button">Best Sellers</button>
         <select id="sort-order">
-            <option value="asc"> Price: Low to High</option>
+            <option value="asc">Price: Low to High</option>
             <option value="desc">Price: High to Low</option>
         </select>
     </nav>
 </section>
 
 <!-- Product Grid -->
-<div class="product-grid"></div>
-
-    <!-- Pagination -->
-    <div class="pagination">
-        <p id="page-info">Trang 1/5</p>
-        <button id="prev-page">&lt;</button>
-        <button id="next-page">&gt;</button>
+<div class="product-grid">
+    <!-- Product Card Example -->
+    <div class="product-card">
+        <img src="../asset/food/banhflan.jpg" alt="Product Image">
+        <h3>Flan Cake</h3>
+        <p class="price">29,000 VND</p>
+        <p class="sold">1k Sold</p>
+        <div class="rating">
+            <span>4.8</span> ★★★★☆<br>
+            <span>500 Reviews</span>
+        </div>
     </div>
+    <!-- Repeat product-card divs for other products -->
+</div>
+
+<!-- Pagination -->
+<div class="pagination">
+    <p id="page-info">Page 1/5</p>
+    <button id="prev-page">&lt;</button>
+    <button id="next-page">&gt;</button>
+</div>
+
 
     <!-- Footer -->
     <footer>
@@ -100,6 +114,6 @@
         </div>
     </footer>
 
-    <script src="snacks.js"></script>
+    <script src="drink.js"></script>
 </body>
 </html>
