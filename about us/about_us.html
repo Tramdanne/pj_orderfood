@@ -4,57 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="about_us.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
         <div class="logo">
-            <img src="https://via.placeholder.com/50" alt="Logo">
-            <span>MyWebsite</span>
+            <img src="../asset/logo1.jpg" alt="Logo">
+            <span>DON FOOD</span>
         </div>
         
         <div class="search-bar">
             <input type="text" placeholder="Search...">
             <button>Search</button>
         </div>
-
+    
         <nav class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
+            <a href="../index.html">Home</a>
+            <a href="../about us/about_us.html">About Us</a>
             
             <!-- Menu with dropdown -->
             <div class="menu-dropdown">
                 <a href="#">Menu</a>
                 <div class="dropdown-content">
-                    <a href="#">Đồ ăn vặt</a>
-                    <a href="#">Đồ uống</a>
+                    <a href="../snacks/snacks.html">Đồ ăn vặt</a>
+                    <a href="../drink/snacks.html">Đồ uống</a>
                 </div>
             </div>
-
-            <a href="#">Review</a>
+    
+            <a href="../review/review.html">Review</a>
         </nav>
-
+    
         <!-- Icons for Login, Registration, Cart -->
         <div class="icons">
-            <a href="#"><img src="https://via.placeholder.com/20" alt="Login Icon"></a>
-            <a href="#"><img src="https://via.placeholder.com/20" alt="Registration Icon"></a>
-            <a href="#"><img src="https://via.placeholder.com/20" alt="Cart Icon"></a>
+            <a href="../login/login.html"><i class="ri-login-circle-line" style="font-size: 24px; color: #333;"></i></a>
+            <a href="../cart/cart.html"><i class="ri-shopping-cart-line" style="font-size: 24px; color: #333;"></i>            
+            </a>
         </div>
     </header>
     <div class="about-container">
         <div class="about-content">
-            <h2>ABOUT US</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h2>DON FOOD</h2>
+            <p>DON FOOD – Experience the joy of delicious dining from the comfort of your home with our online food ordering service.
+                 Wherever you are, with just a few clicks on the Order Food page, you can easily explore and choose from a variety of delightful dishes crafted by professional chefs. 
+                 Enjoy the convenience as we bring tasty, quality, and safe meals right to your doorstep.
+                 No need to step outside – DON FOOD delivers flavorful meals and attentive service straight to you.</p>
             <button class="read-more-btn">Read More</button>
             <div class="social-icons">
-                <a href="#"><img src="https://via.placeholder.com/20/FF0000" alt="Facebook Icon"></a>
-                <a href="#"><img src="https://via.placeholder.com/20/FF0000" alt="Twitter Icon"></a>
-                <a href="#"><img src="https://via.placeholder.com/20/FF0000" alt="Instagram Icon"></a>
+                    <a href="#"><i class="ri-facebook-circle-line"></i></a>
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                    <a href="#"><i class="ri-twitter-line"></i></a>
+
             </div>
         </div>
         <div class="about-image">
-            <img src="https://via.placeholder.com/300x200" alt="About Image">
+            <img src="../asset/banner/banno3.jpg" alt="About Image">
         </div>
     </div>
-</body>
+    
+      <!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-section about">
+            <h3>About Us</h3>
+            <p>DON FOOD là nơi cung cấp những món ăn vặt ngon nhất, đảm bảo chất lượng và an toàn. Chúng tôi mang đến trải nghiệm ẩm thực thú vị và độc đáo cho mọi người.</p>
+        </div>
+        
+        <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./about us/about_us.html">About Us</a></li>
+                <li><a href="./snacks/snacks.html">Menu</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section contact">
+            <h3>Contact Us</h3>
+            <p><i class="ri-map-pin-line"></i> 123 Food Street, Food City, Country</p>
+            <p><i class="ri-phone-line"></i> +123 456 789</p>
+            <p><i class="ri-mail-line"></i> support@donfood.com</p>
+        </div>
+        
+        <div class="footer-section social">
+            <h3>Follow Us</h3>
+            <a href="#"><i class="ri-facebook-circle-line"></i></a>
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="#"><i class="ri-twitter-line"></i></a>
+            <a href="#"><i class="ri-youtube-line"></i></a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 DON FOOD | All Rights Reserved</p>
+    </div>
+</footer>
 </html>

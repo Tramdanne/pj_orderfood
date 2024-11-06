@@ -1,31 +1,155 @@
-/*style.css*/
+/* Reset styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+}
+
+/* Header styling */
+header {
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-family: sans-serif;
-    line-height: 1.5;
-    min-height: 100vh;
-    background: #f3f3f3;
-    flex-direction: column;
-    margin: 0;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
 }
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.logo span {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 300px;
+}
+
+.search-bar input {
+    padding: 10px;
+    font-size: 1em;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    background-color: #2E7D32;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #1b5e20;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.menu-dropdown {
+    position: relative;
+}
+
+.menu-dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    min-width: 150px;
+    padding: 10px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.menu-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 8px 16px;
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icons a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.icons i {
+    font-size: 24px;
+    color: white;
+}
+
+/* CSS cho form đăng nhập */
 
 .main {
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    padding: 10px 20px;
-    transition: transform 0.2s;
-    width: 500px;
+    padding: 20px;
+    width: 400px;
     text-align: center;
+    margin: 20px 0;
 }
 
-h1 {
+.main h1 {
     color: #4CAF50;
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
-label {
+.main label {
     display: block;
     width: 100%;
     margin-top: 10px;
@@ -35,7 +159,7 @@ label {
     font-weight: bold;
 }
 
-input {
+.main input {
     display: block;
     width: 100%;
     margin-bottom: 15px;
@@ -45,21 +169,171 @@ input {
     border-radius: 5px;
 }
 
-button {
-    padding: 15px;
-    border-radius: 10px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+.main .wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main button {
+    padding: 10px 20px;
+    border-radius: 5px;
     border: none;
     color: white;
     cursor: pointer;
     background-color: #4CAF50;
-    width: 100%;
-    font-size: 16px;
+    font-size: 1em;
+    margin-top: 10px;
 }
 
-.wrap {
+.main p {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.main p a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.main p a:hover {
+    text-decoration: underline;
+}
+
+
+/* Footer styling */
+footer {
+    background-color: #4CAF50; /* Same color as header */
+    color: white;
+    padding: 40px 0;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+.footer-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #fff; /* White color for footer headings */
+}
+
+.footer-section p, 
+.footer-section ul li {
+    color: #f1f1f1; /* Lighter text color for readability */
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #e0e0e0; /* Light color on hover */
+    text-decoration: underline;
+}
+
+.footer-section .social a {
+    font-size: 1.5em;
+    color: #fff;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.footer-section .social a:hover {
+    color: #e0e0e0;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px 0;
+    border-top: 1px solid #3e8e41; /* Border to match background */
+    font-size: 0.8em;
+    color: #f1f1f1;
+}
+
+/* Spacing between header, body, and footer */
+.main-content {
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.main {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px 0;
+    width: 500px;
+    text-align: center;
+}
+
+/* Đặt body thành flex container để căn giữa nội dung */
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    background: #f3f3f3;
+    margin: 0;
+    padding: 0;
+}
+
+/* Căn chỉnh header */
+header {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #4CAF50;
+}
+
+/* Căn chỉnh form đăng nhập ở giữa */
+.main {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 20px 30px;
+    text-align: center;
+    margin: 40px auto; /* Thêm khoảng cách giữa header và form */
+    width: 400px;
+}
+
+/* Footer styling */
+footer {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 40px 0;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
 }

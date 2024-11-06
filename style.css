@@ -1,4 +1,4 @@
-/* Reset styles */
+/* Reset styling */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,10 +7,9 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
 }
 
-/* Header styling */
 header {
     display: flex;
     justify-content: space-between;
@@ -26,31 +25,44 @@ header {
 }
 
 .logo img {
+    width: 40px;
+    height: 40px;
     margin-right: 10px;
+    border-radius: 50%;
+}
+
+.logo span {
+    font-size: 1.8em;
+    font-weight: bold;
 }
 
 .search-bar {
     display: flex;
+    align-items: center;
+    width: 400px;
 }
 
 .search-bar input {
-    padding: 8px;
-    border-radius: 5px 0 0 5px;
-    border: none;
+    padding: 10px;
+    font-size: 1em;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
     outline: none;
 }
 
 .search-bar button {
-    padding: 8px;
-    background-color: #2E7D32; /* Dark green color */
-    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
     border: none;
-    border-radius: 0 5px 5px 0;
+    background-color: #2E7D32;
+    color: white;
+    border-radius: 0 4px 4px 0;
     cursor: pointer;
 }
 
 .search-bar button:hover {
-    background-color: #1B5E20; /* Darker green for hover effect */
+    background-color: #1b5e20;
 }
 
 .nav-links {
@@ -62,28 +74,26 @@ header {
 .nav-links a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 .menu-dropdown {
     position: relative;
 }
 
-.menu-dropdown a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-}
-
 .menu-dropdown .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #4CAF50; /* Matching the header color */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    min-width: 150px;
-    border-radius: 8px; /* Rounded corners */
     top: 100%;
-    z-index: 1;
+    left: 0;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    min-width: 150px;
+    padding: 10px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .menu-dropdown:hover .dropdown-content {
@@ -91,104 +101,188 @@ header {
 }
 
 .dropdown-content a {
-    color: white;
-    padding: 10px;
     display: block;
+    padding: 8px 16px;
+    color: #333;
     text-decoration: none;
-    border-radius: 8px; /* Ensuring each link has rounded corners */
 }
 
 .dropdown-content a:hover {
-    background-color: #3e8e41; /* Slightly darker shade for hover effect */
+    background-color: #f1f1f1;
 }
 
 .icons {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 }
 
-.icons img {
-    width: 20px;
-    height: 20px;
+.icons a {
+    text-decoration: none;
+    color: inherit;
 }
 
-/* Advertisement Section */
+.icons i {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+}
+
+/* Advertisement section */
 .advertisement {
-    margin: 20px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .advertisement img {
     width: 100%;
     max-width: 800px;
-    border-radius: 10px;
-    margin-bottom: 10px;
+    border-radius: 8px;
 }
 
 .promo-deals {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
+    margin-top: 10px;
 }
 
-.deal {
+.promo-deals .deal {
     text-align: center;
-    font-size: 14px;
+    width: 150px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.deal img {
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
+.promo-deals .deal img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+    border-radius: 8px;
 }
 
-/* Top Searches Section */
+/* Top Searches section */
 .top-searches {
-    background-color: white;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
 }
 
 .top-searches h2 {
-    font-size: 18px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
     color: #333;
-    margin-bottom: 15px;
 }
 
 .products {
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    gap: 15px;
     flex-wrap: wrap;
 }
 
 .product {
     text-align: center;
-    width: 100px;
+    width: 150px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .product img {
     width: 100%;
-    border-radius: 5px;
-    margin-bottom: 5px;
-}
-
-.product p {
-    font-size: 14px;
-    color: #333;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 .view-all {
-    display: block;
-    text-align: right;
+    display: inline-block;
     margin-top: 10px;
     color: #4CAF50;
     text-decoration: none;
-    font-weight: bold;
 }
 
 .view-all:hover {
     text-decoration: underline;
+}
+
+/* Footer styling */
+footer {
+    background-color: #4CAF50; /* Màu nền trùng với header */
+    color: white;
+    padding: 40px 0;
+    font-size: 0.9em;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #fff; /* Màu trắng cho tiêu đề của footer */
+}
+
+.footer-section p, 
+.footer-section ul li {
+    color: #f1f1f1; /* Màu chữ sáng hơn để dễ đọc */
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #e0e0e0; /* Màu sáng hơn khi hover */
+    text-decoration: underline;
+}
+
+.footer-section .social a {
+    font-size: 1.5em;
+    color: #fff;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.footer-section .social a:hover {
+    color: #e0e0e0;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px 0;
+    border-top: 1px solid #3e8e41; /* Đường viền phù hợp với màu nền */
+    font-size: 0.8em;
+    color: #f1f1f1;
 }
