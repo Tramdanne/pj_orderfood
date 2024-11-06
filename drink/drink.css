@@ -179,21 +179,19 @@ header {
     cursor: pointer;
     border-radius: 5px;
     font-size: 1em;
-    appearance: none; /* Tắt biểu tượng mặc định của <select> */
+    appearance: none; 
 }
 
 .sort-filter select:focus {
-    background-color: #4CAF50; /* Màu nền khi chọn */
-    color: white; /* Màu chữ khi chọn */
+    background-color: #4CAF50;
+    color: white; 
     outline: none;
     border-color: #4CAF50;
-    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Tạo hiệu ứng shadow khi chọn */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); 
 }
 
-/* Style cho các tùy chọn bên trong select */
 .sort-filter select option {
-    background-color: white; /* Nền trắng cho các tùy chọn */
-    color: #4CAF50;
+    background-color: white; 
 }
 
 /* Product grid styling */

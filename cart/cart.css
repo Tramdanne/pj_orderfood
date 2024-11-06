@@ -15,7 +15,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #4CAF50; /* Màu chủ đề */
+    background-color: #4CAF50;
     color: white;
 }
 
@@ -90,8 +90,8 @@ header {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #4CAF50; /* Màu nền chủ đề */
-    color: white; /* Màu chữ trắng */
+    background-color: #4CAF50;
+    color: white; 
     border: 1px solid #4CAF50;
     border-radius: 4px;
     min-width: 150px;
@@ -106,13 +106,13 @@ header {
 .dropdown-content a {
     display: block;
     padding: 8px 16px;
-    color: white; /* Màu chữ trắng */
+    color: white; 
     text-decoration: none;
 }
 
 .dropdown-content a:hover {
-    background-color: #3E8E41; /* Màu nền khi hover nhạt hơn */
-    color: white; /* Đảm bảo màu chữ vẫn là trắng khi hover */
+    background-color: #3E8E41; 
+    color: white; 
 }
 
 

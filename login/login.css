@@ -1,4 +1,3 @@
-/* Reset styling */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,13 +9,12 @@ body {
     background-color: #f9f9f9;
 }
 
-/* Header styling */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #4CAF50; /* Màu chủ đề */
+    background-color: #4CAF50;
     color: white;
 }
 
@@ -37,7 +35,6 @@ header {
     font-weight: bold;
 }
 
-/* Search bar styling */
 .search-bar {
     display: flex;
     align-items: center;
@@ -67,7 +64,6 @@ header {
     background-color: #2E7D32;
 }
 
-/* Navigation links styling */
 .nav-links {
     display: flex;
     align-items: center;
@@ -81,7 +77,6 @@ header {
     font-weight: bold;
 }
 
-/* Dropdown Menu */
 .menu-dropdown {
     position: relative;
 }
@@ -91,8 +86,8 @@ header {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #4CAF50; /* Màu nền chủ đề */
-    color: white; /* Màu chữ trắng */
+    background-color: #4CAF50; 
+    color: white; 
     border: 1px solid #4CAF50;
     border-radius: 4px;
     min-width: 150px;
@@ -107,35 +102,30 @@ header {
 .dropdown-content a {
     display: block;
     padding: 8px 16px;
-    color: white; /* Màu chữ trắng */
+    color: white; 
     text-decoration: none;
 }
 
 .dropdown-content a:hover {
-    background-color: #3E8E41; /* Màu nền khi hover nhạt hơn */
-    color: white; /* Đảm bảo màu chữ vẫn là trắng khi hover */
+    background-color: #3E8E41; 
+    color: white;
 }
 
-/* Icon section styling */
 .icons {
     display: flex;
     align-items: center;
-    gap: 25px; /* Điều chỉnh khoảng cách giữa các biểu tượng để giống ảnh */
+    gap: 25px;
 }
 
 .icons a {
     text-decoration: none;
     color: inherit;
-    font-size: 1.5em; /* Đảm bảo biểu tượng đủ lớn */
+    font-size: 1.5em; 
 }
 
 .icons a:hover i {
     color: #f1f1f1;
 }
-
-
-
-/* CSS cho form đăng nhập */
 
 .main {
     background-color: #fff;
@@ -204,10 +194,8 @@ header {
     text-decoration: underline;
 }
 
-
-/* Footer styling */
 footer {
-    background-color: #4CAF50; /* Same color as header */
+    background-color: #4CAF50; 
     color: white;
     padding: 40px 0;
     font-size: 0.9em;
@@ -231,12 +219,12 @@ footer {
 .footer-section h3 {
     font-size: 1.2em;
     margin-bottom: 15px;
-    color: #fff; /* White color for footer headings */
+    color: #fff; 
 }
 
 .footer-section p, 
 .footer-section ul li {
-    color: #f1f1f1; /* Lighter text color for readability */
+    color: #f1f1f1; 
 }
 
 .footer-section ul {
@@ -256,7 +244,7 @@ footer {
 }
 
 .footer-section ul li a:hover {
-    color: #e0e0e0; /* Light color on hover */
+    color: #e0e0e0; 
     text-decoration: underline;
 }
 
@@ -274,12 +262,11 @@ footer {
 .footer-bottom {
     text-align: center;
     padding: 15px 0;
-    border-top: 1px solid #3e8e41; /* Border to match background */
+    border-top: 1px solid #3e8e41; 
     font-size: 0.8em;
     color: #f1f1f1;
 }
 
-/* Spacing between header, body, and footer */
 .main-content {
     padding: 20px;
     margin-top: 20px;
@@ -297,7 +284,6 @@ footer {
     text-align: center;
 }
 
-/* Đặt body thành flex container để căn giữa nội dung */
 body {
     font-family: sans-serif;
     line-height: 1.5;
@@ -306,25 +292,22 @@ body {
     padding: 0;
 }
 
-/* Căn chỉnh header */
 header {
     width: 100%;
     padding: 10px 0;
     background-color: #4CAF50;
 }
 
-/* Căn chỉnh form đăng nhập ở giữa */
 .main {
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     padding: 20px 30px;
     text-align: center;
-    margin: 40px auto; /* Thêm khoảng cách giữa header và form */
+    margin: 40px auto; 
     width: 400px;
 }
 
-/* Footer styling */
 footer {
     width: 100%;
     background-color: #4CAF50;

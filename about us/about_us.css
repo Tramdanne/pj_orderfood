@@ -9,13 +9,12 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Header styling */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #4CAF50; /* Màu chủ đề */
+    background-color: #4CAF50; 
     color: white;
 }
 
@@ -90,8 +89,8 @@ header {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #4CAF50; /* Màu nền chủ đề */
-    color: white; /* Màu chữ trắng */
+    background-color: #4CAF50; 
+    color: white; 
     border: 1px solid #4CAF50;
     border-radius: 4px;
     min-width: 150px;
@@ -106,13 +105,13 @@ header {
 .dropdown-content a {
     display: block;
     padding: 8px 16px;
-    color: white; /* Màu chữ trắng */
+    color: white; 
     text-decoration: none;
 }
 
 .dropdown-content a:hover {
-    background-color: #3E8E41; /* Màu nền khi hover nhạt hơn */
-    color: white; /* Đảm bảo màu chữ vẫn là trắng khi hover */
+    background-color: #3E8E41; 
+    color: white; 
 }
 
 /* Icon section styling */
@@ -136,13 +135,13 @@ header {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    gap: 20px; /* khoảng cách giữa ảnh và nội dung */
-    overflow: hidden; /* để giữ các phần tử không bị tràn ra ngoài */
+    gap: 20px; 
+    overflow: hidden; 
 }
 
 .about-content {
     flex: 1;
-    max-width: 50%; /* Đảm bảo phần nội dung không vượt quá 50% */
+    max-width: 50%; 
     padding-right: 20px;
 }
 
@@ -160,8 +159,7 @@ header {
 
 .read-more-btn {
     padding: 10px 15px;
-    background-color: #4CAF50; /* Màu xanh lá */
-    color: white;
+    background-color: #4CAF50; 
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -170,20 +168,20 @@ header {
 }
 
 .read-more-btn:hover {
-    background-color: #45a049; /* Màu xanh lá đậm hơn khi hover */
+    background-color: #45a049; 
 }
 
 /* About Image styling */
 .about-image {
     flex: 1;
-    max-width: 50%; /* Đảm bảo phần ảnh không vượt quá 50% */
+    max-width: 50%; 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .about-image img {
-    width: 100%; /* Đảm bảo ảnh chiếm toàn bộ không gian */
+    width: 100%; 
     height: auto;
     border-radius: 8px;
 }
@@ -196,7 +194,7 @@ header {
     }
 
     .about-content, .about-image {
-        max-width: 100%; /* Đảm bảo toàn bộ chiều rộng khi hiển thị trên di động */
+        max-width: 100%; 
     }
 
     .about-image {
@@ -233,7 +231,7 @@ header {
 
 /* Footer styling */
 footer {
-    background-color: #4CAF50; /* Màu nền trùng với header */
+    background-color: #4CAF50; 
     color: white;
     padding: 40px 0;
     font-size: 0.9em;
@@ -256,12 +254,12 @@ footer {
 .footer-section h3 {
     font-size: 1.2em;
     margin-bottom: 15px;
-    color: #fff; /* Màu trắng cho tiêu đề của footer */
+    color: #fff; 
 }
 
 .footer-section p, 
 .footer-section ul li {
-    color: #f1f1f1; /* Màu chữ sáng hơn để dễ đọc */
+    color: #f1f1f1; 
 }
 
 .footer-section ul {
@@ -281,7 +279,7 @@ footer {
 }
 
 .footer-section ul li a:hover {
-    color: #e0e0e0; /* Màu sáng hơn khi hover */
+    color: #e0e0e0; 
     text-decoration: underline;
 }
 
@@ -299,7 +297,7 @@ footer {
 .footer-bottom {
     text-align: center;
     padding: 15px 0;
-    border-top: 1px solid #3e8e41; /* Đường viền phù hợp với màu nền */
+    border-top: 1px solid #3e8e41;
     font-size: 0.8em;
     color: #f1f1f1;
 }

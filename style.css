@@ -16,7 +16,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #4CAF50; /* Màu chủ đề */
+    background-color: #4CAF50; 
     color: white;
 }
 
@@ -91,8 +91,8 @@ header {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #4CAF50; /* Màu nền chủ đề */
-    color: white; /* Màu chữ trắng */
+    background-color: #4CAF50; 
+    color: white; 
     border: 1px solid #4CAF50;
     border-radius: 4px;
     min-width: 150px;

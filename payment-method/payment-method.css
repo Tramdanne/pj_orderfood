@@ -1,4 +1,3 @@
-/* Reset styling */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -39,7 +38,6 @@ h2, h3 {
     text-decoration: underline;
 }
 
-/* Payment Methods */
 .payment-method {
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -50,7 +48,7 @@ h2, h3 {
 .payment-method label {
     display: flex;
     align-items: center;
-    gap: 15px; /* Tạo khoảng cách giữa các phần tử */
+    gap: 15px; 
     cursor: pointer;
     padding: 8px;
     border-radius: 5px;
@@ -61,7 +59,6 @@ h2, h3 {
     display: none;
 }
 
-/* Khi phương thức thanh toán được chọn */
 .payment-method input[type="radio"]:checked + .method {
     border: 2px solid #4CAF50;
     border-radius: 8px;
@@ -69,7 +66,6 @@ h2, h3 {
     background-color: #f0f8ff;
 }
 
-/* Style cho method */
 .method {
     display: flex;
     align-items: center;
@@ -79,14 +75,13 @@ h2, h3 {
     flex-grow: 1;
 }
 
-/* Style cho hình ảnh và văn bản để thẳng hàng */
+
 .method img {
     width: 32px;
     height: 32px;
     border-radius: 4px;
 }
 
-/* Căn chỉnh văn bản thẳng hàng */
 .method span {
     display: flex;
     flex-direction: column;
@@ -107,9 +102,8 @@ h2, h3 {
     margin: 0;
 }
 
-/* Checkout container styling */
 .checkout-container {
-    position: relative; /* Để nút đóng nằm trong phạm vi của hộp thoại */
+    position: relative; 
     padding: 30px;
     background-color: #fff;
     border-radius: 10px;
@@ -118,7 +112,6 @@ h2, h3 {
     margin: 0 auto;
 }
 
-/* Close button styling */
 .close-btn {
     position: absolute;
     top: 10px;
@@ -131,11 +124,9 @@ h2, h3 {
 }
 
 .close-btn:hover {
-    color: #ff0000; /* Màu đỏ khi hover */
+    color: #ff0000; 
 }
 
-
-/* Voucher Section */
 .voucher-section {
     display: flex;
     flex-direction: column;
@@ -178,7 +169,6 @@ h2, h3 {
     background-color: #4CAF50;
 }
 
-/* Invoice Info */
 .invoice-info {
     border-bottom: 1px solid #ddd;
     padding-bottom: 15px;
@@ -201,7 +191,6 @@ h2, h3 {
     text-decoration: underline;
 }
 
-/* Order Summary */
 .order-summary h3 {
     font-size: 14px;
     margin-bottom: 10px;
@@ -221,7 +210,6 @@ h2, h3 {
     color: #4CAF50;
 }
 
-/* Proceed Button */
 .proceed-btn {
     width: 100%;
     padding: 12px;
