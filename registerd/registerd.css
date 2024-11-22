@@ -1,7 +1,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url('../assets/background/background2.jpg');
+    background-image: url('../assets/background/background1.jpg');
     background-size: cover;
     background-position: center;
     margin: 0;
@@ -44,6 +44,7 @@ label {
     text-align: left;
 }
 
+
 input[type="text"],
 input[type="password"] {
     padding: 12px;
@@ -65,36 +66,33 @@ button {
     padding: 15px;
     background-color: #FAB12F;
     color: white;
-    border: none; 
+    border: none;
     border-radius: 6px;
     cursor: pointer;
     font-size: 20px;
     font-weight: bold;
     width: 100%;
     box-sizing: border-box;
-    text-align: center;
 }
-
 
 button:hover {
     background-color: #ee9908;
 }
 
-.links {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    margin-top: 10px; 
-    font-size: 18px; 
-}
 
-.links a {
-    text-decoration: none; 
-    color: #FAB12F; 
+p {
     font-size: 18px;
-    font-weight: bold; 
+    color: #333;
+    margin-top: 15px;
 }
 
-.links a:hover {
-    color: #ee9908; 
+p a {
+    text-decoration: none;
+    color: #FAB12F;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+p a:hover {
+    color: #ee9908;
 }

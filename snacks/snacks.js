@@ -90,3 +90,36 @@ document.getElementById('prev-page').addEventListener('click', prevPage);
 
 // Initial render
 renderProducts();
+// Function to set the active state on buttons
+function setActiveButton(button) {
+    // Remove 'active' class from all filter buttons and the dropdown
+    const allFilters = document.querySelectorAll('.sort-filter .filter-button, .sort-filter select');
+    allFilters.forEach(filter => filter.classList.remove('active'));
+
+    // Add 'active' class to the clicked button
+    button.classList.add('active');
+}
+
+// Event listeners for buttons
+document.getElementById('filter-relevant').addEventListener('click', function() {
+    setActiveButton(this);
+});
+
+document.getElementById('filter-new').addEventListener('click', function() {
+    setActiveButton(this);
+});
+
+document.getElementById('filter-popular').addEventListener('click', function() {
+    setActiveButton(this);
+});
+
+// Event listener for the select dropdown
+document.getElementById('sort-order').addEventListener('change', function() {
+    // Remove 'active' class from all buttons
+    const buttons = document.querySelectorAll('.sort-filter .filter-button');
+    buttons.forEach(btn => btn.classList.remove('active'));
+
+    // Set the active state on the select dropdown
+    this.classList.add('active');
+});
+

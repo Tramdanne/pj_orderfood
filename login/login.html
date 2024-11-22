@@ -1,111 +1,31 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login_Donfood</title>
+    <title>Login</title>
     <link rel="stylesheet" href="login.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
-
 <body>
-        <!-- Header -->
-        <header>
-            <div class="logo">
-                <img src="../asset/logo1.jpg" alt="Logo">
-                <span>DON FOOD</span>
-            </div>
-            
-            <div class="search-bar">
-                <input type="text" placeholder="Search...">
-                <button>Search</button>
-            </div>
-    
-            <nav class="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="../about us/about_us.html">About Us</a>
-                <div class="menu-dropdown">
-                    <a href="#">Menu</a>
-                    <div class="dropdown-content">
-                        <a href="../snacks/snacks.html">Snacks</a>
-                        <a href="../drink/drink.html">Drinks</a>
-                    </div>
-                </div>
-                <a href="../review/review.html">Review</a>
-            </nav>
-    
-            <div class="icons">
-                <a href="../login/login.html"><i class="ri-login-circle-line"></i></a>
-                <a href="../cart/cart.html"><i class="ri-shopping-cart-line"></i></a>
-            </div>
-        </header>
-
-    <div class="main">
-        <h1>Log in</h1>
-
-        <form action="">
-            <label for="first">
-                Username:
-            </label>
-            <input type="text" id="first" name="first" 
-                placeholder="Enter your Username" required>
-
-            <label for="password">
-                Password:
-            </label>
-            <input type="password" id="password" name="password" 
-                placeholder="Enter your Password" required>
-
-            <div class="wrap">
-                <button type="button" onclick="window.location.href='../index.html'">
-                    Submit
-                </button>
-                
+    <div class="container">
+        <h1>Login</h1>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <button type="submit">Login</button>
+            <br>
+            <div class="links">
+                <a href="../Forgot-Password/Forgot-Password.html">Forgot Password</a>
+                <p>Don't have an account?
+                <br> <a href="../registerd/registerd.html">Sign Up</a></p>
             </div>
         </form>
-        
-        <p>Not registered?
-            <a href="../registerd/registered.html" style="text-decoration: none;">
-                Create an account
-            </a>
-        </p>
     </div>
-                    <!-- Footer -->
-                <footer>
-                    <div class="footer-container">
-                        <div class="footer-section about">
-                            <h3>About Us</h3>
-                            <p>DON FOOD is the go-to place for the best, high-quality, and safe snacks.
-                                We bring a delightful and unique culinary experience to everyone.</p>
-                        </div>
-                        
-                        <div class="footer-section links">
-                            <h3>Quick Links</h3>
-                            <ul>
-                                <li><a href="../index.html">Home</a></li>
-                                <li><a href="../about us/about_us.html">About Us</a></li>
-                                <li><a href="../snacks/snacks.html">Menu</a></li>
-                            </ul>
-                        </div>
-                        
-                        <div class="footer-section contact">
-                            <h3>Contact Us</h3>
-                            <p><i class="ri-map-pin-line"></i> 123 Food Street, Food City, Country</p>
-                            <p><i class="ri-phone-line"></i> +123 456 789</p>
-                            <p><i class="ri-mail-line"></i> support@donfood.com</p>
-                        </div>
-                        
-                        <div class="footer-section social">
-                            <h3>Follow Us</h3>
-                            <a href="https://www.facebook.com/profile.php?id=100015869462379"><i class="ri-facebook-circle-line"></i></a>
-                            <a href="https://www.instagram.com/tdnt04/"><i class="ri-instagram-line"></i></a>
-                            <a href="https://www.youtube.com/watch?v=qcYlaAYWyoM"><i class="ri-youtube-line"></i></a>
-                        </div>
-                    </div>
-                    <div class="footer-bottom">
-                        <p>&copy; 2024 DON FOOD | All Rights Reserved</p>
-                    </div>
-                </footer>
 </body>
+</html>
 
 </html>

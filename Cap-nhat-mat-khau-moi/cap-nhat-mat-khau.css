@@ -44,7 +44,6 @@ label {
     text-align: left;
 }
 
-input[type="text"],
 input[type="password"] {
     padding: 12px;
     margin-bottom: 15px;
@@ -55,7 +54,6 @@ input[type="password"] {
     font-size: 20px;
 }
 
-input[type="text"]:focus,
 input[type="password"]:focus {
     border-color: #FAB12F;
     outline: none;
@@ -65,36 +63,98 @@ button {
     padding: 15px;
     background-color: #FAB12F;
     color: white;
-    border: none; 
+    border: none;
     border-radius: 6px;
     cursor: pointer;
     font-size: 20px;
     font-weight: bold;
     width: 100%;
     box-sizing: border-box;
-    text-align: center;
 }
-
 
 button:hover {
     background-color: #ee9908;
 }
 
-.links {
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../assets/background/background2.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: space-between; 
+    justify-content: center;
     align-items: center;
-    margin-top: 10px; 
-    font-size: 18px; 
+    min-height: 100vh;
+    box-sizing: border-box;
 }
 
-.links a {
-    text-decoration: none; 
-    color: #FAB12F; 
+.container {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+p
+{
+    text-align: left;
     font-size: 18px;
-    font-weight: bold; 
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.5;
 }
 
-.links a:hover {
-    color: #ee9908; 
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+label {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+    text-align: left;
+}
+
+input[type="email"] {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+button {
+    padding: 15px;
+    background-color: #FAB12F;
+    border: none; 
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+}
+ button a
+ {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+ }
+button:hover {
+    background-color: #ee9908;
 }
